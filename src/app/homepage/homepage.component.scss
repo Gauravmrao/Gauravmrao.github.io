@@ -1,0 +1,189 @@
+.homepage-container {
+    font-family: Arial, sans-serif;
+
+}
+  
+.intro-box{
+    text-align: center;
+    height: 100vh;    /* Full viewport height */
+    display: flex;    /* Enable flexbox on the container */
+}
+.intro-left, .intro-right{
+    flex: 1;              /* Each div will take up an equal share of the available space (50% each) */
+    display: flex;        /* Optional: centers the content inside the div */
+    justify-content: center;
+    align-items: center;
+}
+.intro-left{
+    background-color: #fefbf4;
+    color: #364e1a
+}
+.name{
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 325;
+    font-style: normal;
+    font-size: 48px;
+    margin-bottom: 20px;
+
+    background-image: linear-gradient(90deg, #364e1a 50%, #fefbf4 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: reveal 2s steps(30) 0.25s forwards;
+}
+@keyframes reveal {
+    to {
+      background-position: 0%;
+    }
+}
+.intro-right{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #1c1c1c;
+    color: #fefbf4;
+}
+.name2{
+    white-space: nowrap;    /* Prevents the text from wrapping */
+    overflow: hidden;       /* Ensures hidden part is not shown */
+    border-right: 2px solid #fefbf4;  /* Creates the "cursor" effect */
+    animation: invisible 2.5s, typing 3s steps(30, end) 2.5s forwards, blink-caret 0.75s step-end infinite 3s;
+}
+@keyframes invisible {
+    from{opacity: 0;} to{opacity: 0;}
+}
+@keyframes typing {
+    from { 
+        width: 0;                   /* Start with 0 width (hidden text) */
+        visibility: visible;        /* Ensure text is visible as it's typed */
+    }          
+    to { width: 100%; white-space: wrap;}         /* End with full width (revealed text) */
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; } /* Cursor invisible */
+    50% { border-color: #fefbf4; }            /* Cursor visible */
+}
+
+.about-box{
+    margin-top: 10px;
+    background-color:#fff4db;
+    display: flex;
+    align-items: flex-start;          /* Vertically align the image and description */
+    justify-content: flex-start;  /* Align items to the start (left) */
+    width: 100%;                  /* Container takes full width */
+    flex-direction: column;
+}
+.about-heading{
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+    color: #364e1a;
+    font-size: 15px;
+    text-decoration: underline;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.about-description{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.about-picture img{
+    width: 250px;                 /* Set the image width */
+    height: auto;                 /* Maintain aspect ratio */
+    margin-left: 100px;
+}
+.about-text{
+    flex: 1;                      /* Make the description take up remaining space */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 100px;
+    color: #1c1c1c
+}
+.about-buttons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+.about-me-button, .about-resume-button {
+    font-family: "Playwrite US Trad", cursive;
+    font-size: 16px;
+    font-weight: 350;
+    font-style: normal;
+    background-color: #364e1a;
+    color: #fefbf4;
+    padding: 5px 10px;                   /* Adjusts the top/bottom and left/right padding */
+    margin-right: 30px;
+    border-radius: 10px;                /* Optional: Add rounded corners */
+    cursor: pointer;                   /* Make it look clickable */
+    height: 50px;
+}
+.about-me-button:hover, .about-resume-button:hover{
+    background-color: #62734e;         /* Change color on hover */
+}
+.about-linkedin-button{
+    background-color: transparent;
+    border: transparent;
+}
+.about-linkedin-button img{
+    height: 50px;  /* Set the desired height */
+    width: auto;  /* Keeps the aspect ratio */
+    cursor: pointer;
+}
+
+
+.projects-box{
+    margin-top: 10px;
+    background-color:#2b2b2b;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;  /* Align items to the start (left) */
+    width: 100%;                  /* Container takes full width */
+}
+.projects-heading{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fefbf4;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.projects-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+mat-card {
+    max-width: 420px;
+    margin: 20px;
+    background-color: #1c1c1c;
+    color: #fefbf4
+}
+.project-title{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+
+}
+.project-technologies{
+    margin-top: 5px;
+    font-style: italic;
+    color: #fefbf4;
+}
