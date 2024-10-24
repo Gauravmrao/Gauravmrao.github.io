@@ -1,6 +1,5 @@
 .homepage-container {
     font-family: Arial, sans-serif;
-
 }
   
 .intro-box{
@@ -69,7 +68,7 @@
 
 .about-box{
     margin-top: 10px;
-    background-color:#fff4db;
+    background-color: #fefbf4;
     display: flex;
     align-items: flex-start;          /* Vertically align the image and description */
     justify-content: flex-start;  /* Align items to the start (left) */
@@ -77,12 +76,12 @@
     flex-direction: column;
 }
 .about-heading{
-    font-family: "Playwrite US Trad", cursive;
+    font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 150;
     font-style: normal;
     color: #364e1a;
-    font-size: 15px;
+    font-size: 20px;
     text-decoration: underline;
     margin-left: 100px;
     margin-top: 40px;
@@ -113,7 +112,7 @@
     justify-content: flex-start;
 }
 .about-me-button, .about-resume-button {
-    font-family: "Playwrite US Trad", cursive;
+    font-family: "Pixelify Sans", sans-serif;
     font-size: 16px;
     font-weight: 350;
     font-style: normal;
@@ -172,7 +171,14 @@ mat-card {
     max-width: 420px;
     margin: 20px;
     background-color: #1c1c1c;
-    color: #fefbf4
+    color: #fefbf4;
+    border: 4px solid #364e1a; /* Set the border width and color */
+    border-radius: 8px; /* Optional: Set border radius */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+}
+mat-card:hover{
+    transform: translateY(-7px); /* Move the card up slightly */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow to create a popping effect */
 }
 .project-title{
     font-family: "Pixelify Sans", sans-serif;
@@ -183,7 +189,29 @@ mat-card {
 
 }
 .project-technologies{
+    font-size: 14px;
     margin-top: 5px;
     font-style: italic;
     color: #fefbf4;
+}
+.project-button-containter{
+    display: grid; /* Use grid layout */
+    place-items: center; /* Center both horizontally and vertically */
+}
+.project-button{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 350;
+    font-style: normal;
+    background-color: #364e1a;
+    color: #fefbf4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1px 20px;                   /* Adjusts the top/bottom and left/right padding */
+    border-radius: 10px;                /* Optional: Add rounded corners */
+    cursor: pointer;                   /* Make it look clickable */
+    height: 50px;
+}
+.project-button:hover{
+    background-color: #62734e;         /* Change color on hover */
 }
