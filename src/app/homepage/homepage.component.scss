@@ -7,59 +7,31 @@
     height: 100vh;    /* Full viewport height */
     display: flex;    /* Enable flexbox on the container */
 }
-.intro-left, .intro-right{
+.intro-title{
     flex: 1;              /* Each div will take up an equal share of the available space (50% each) */
     display: flex;        /* Optional: centers the content inside the div */
     justify-content: center;
     align-items: center;
-}
-.intro-left{
-    background-color: #fefbf4;
-    color: #364e1a
-}
-.name{
-    font-family: "Playwrite US Trad", cursive;
-    font-optical-sizing: auto;
-    font-weight: 325;
-    font-style: normal;
-    font-size: 48px;
-    margin-bottom: 20px;
-
-    background-image: linear-gradient(90deg, #364e1a 50%, #fefbf4 50%);
-    background-size: 200% 100%;
-    background-position: 100%;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: reveal 2s steps(30) 0.25s forwards;
-}
-@keyframes reveal {
-    to {
-      background-position: 0%;
-    }
-}
-.intro-right{
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     background-color: #1c1c1c;
     color: #fefbf4;
+    width: calc(var(--char-count) * 1ch); /* Width based on character count */
 }
-.name2{
+.name{
     white-space: nowrap;    /* Prevents the text from wrapping */
     overflow: hidden;       /* Ensures hidden part is not shown */
     border-right: 2px solid #fefbf4;  /* Creates the "cursor" effect */
-    animation: invisible 2.5s, typing 3s steps(30, end) 2.5s forwards, blink-caret 0.75s step-end infinite 3s;
-}
-@keyframes invisible {
-    from{opacity: 0;} to{opacity: 0;}
+    animation: typing 3s steps(var(--char-count), end), blink-caret 0.75s step-end infinite;
 }
 @keyframes typing {
     from { 
         width: 0;                   /* Start with 0 width (hidden text) */
         visibility: visible;        /* Ensure text is visible as it's typed */
     }          
-    to { width: 100%; white-space: wrap;}         /* End with full width (revealed text) */
+    to { width: calc(var(--char-count) * 1ch); white-space: nowrap;}         /* End with full width (revealed text) */
 }
 @keyframes blink-caret {
     from, to { border-color: transparent; } /* Cursor invisible */
@@ -76,10 +48,9 @@
     flex-direction: column;
 }
 .about-heading{
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 150;
-    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: bold;
     color: #364e1a;
     font-size: 20px;
     text-decoration: underline;
@@ -137,21 +108,18 @@
     cursor: pointer;
 }
 
-
 .projects-box{
     margin-top: 10px;
     background-color:#2b2b2b;
     display: flex;
     flex-direction: column;
-
     justify-content: flex-start;  /* Align items to the start (left) */
     width: 100%;                  /* Container takes full width */
 }
 .projects-heading{
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: bold;
     color: #fefbf4;
     font-size: 20px;
     text-decoration: underline;
@@ -186,7 +154,6 @@ mat-card:hover{
     font-weight: 400;
     font-style: normal;
     font-size: 28px;
-
 }
 .project-technologies{
     font-size: 14px;
@@ -214,4 +181,9 @@ mat-card:hover{
 }
 .project-button:hover{
     background-color: #62734e;         /* Change color on hover */
+}
+.projects-link {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }

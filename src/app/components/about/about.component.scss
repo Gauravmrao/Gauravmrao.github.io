@@ -1,0 +1,62 @@
+.header-pad{
+    height: 125px;
+}
+.about-container {
+    background-color: #fefbf4;
+    text-align: center;
+}
+.about-info {
+    display: flex;    /* Enable flexbox on the container */
+    flex-direction: column;
+}
+.about-pictures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about-pictures img{
+    height: 325px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+.about-pictures img:hover{
+    transform: translateY(-7px);
+}
+.about-heading{
+    margin-top: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 30px;
+    color: #364e1a;
+    margin-left: 100px;
+}
+.about-description{
+    display: flex;
+    flex-direction: row;
+}
+.about-text{
+    flex: 1;                      /* Make the description take up remaining space */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #1c1c1c
+}
+
+.journey-container {
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+}
+.journey-heading {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 30px;
+    color: #fefbf4;
+    margin-left: 100px;
+    margin-top: 25px;
+}

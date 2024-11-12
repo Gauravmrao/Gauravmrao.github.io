@@ -5,11 +5,8 @@
 
 <div class="homepage-container">
     <div class="intro-box">
-        <div class="intro-left">
-            <h1 class="name">Hi, I'm Gaurav</h1>
-        </div>
-        <div class="intro-right">
-            <h1 class="name2">and I'm making the world my playground!</h1>
+        <div class="intro-title" [ngStyle]="{'--char-count': characterCount}">
+            <h1 class="name">Hi, I'm Gaurav! Welcome to my website!</h1>
         </div>
     </div>
 
@@ -28,10 +25,10 @@
                     I remember attempting to program lego robots to do my chores in elementary school, and the feeling of wonder that arose
                     from realizing the endless potential of technology to make our lives easier. I have been chasing this feeling since, 
                     and I now strive to apply my skills in building a better, more sustainable, and user-friendly world. With a strong 
-                    technical foundation in fullstack development and data science, I am looking for the next opportunity to 
+                    technical foundation in fullstack development and data science, I am always looking for the next opportunity to 
                     contribute my skills, grow my knowledge, and build robust software solutions.</p>
                 <div class="about-buttons"> 
-                    <button class="about-me-button"> More About Me  </button>
+                    <button class="about-me-button" routerLink="/about" fragment="top"> More About Me </button>
                     <button class="about-resume-button"> My Resume </button>
                     <a href="https://www.linkedin.com/in/gauravmrao/" target="_blank" class="about-linkedin-button">
                         <img src="assets/icons/linkedin-green.png" alt="Linkedin Icon" 
@@ -102,7 +99,9 @@
             </mat-card>
         </div>
         <div class="projects-link">
-            <button>More Projects</button>
+            <a target="_blank">
+                <button class="project-button" mat-button>See More Projects</button>
+            </a>
         </div>
 
         

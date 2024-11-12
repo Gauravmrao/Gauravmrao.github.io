@@ -13,13 +13,13 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Colors
 ### Light
-- Background: #fefbf4;
-- Section background: #fff4db;
+- light Background: #fefbf4;
+- light Section background: #fff4db;
 - Green text: #364e1a;
 - light green: #62734e
 
 ### Dark
-- Background: #1c1c1c;
-- section background: #2b2b2b
+- dark Background: #1c1c1c;
+- dark section background: #2b2b2b;
 - white text:#fefbf4;
 
