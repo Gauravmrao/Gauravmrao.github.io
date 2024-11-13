@@ -1,0 +1,56 @@
+.p{
+    font-family: "Scope One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.div{
+    background-color: #fefbf4;
+    color: #1c1c1c;
+}
+
+.header-pad{
+    height: 100px;
+}
+.work-landing{
+    display: flex;
+    flex-direction: row;
+}
+.work-landing-titles{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.work-title{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 5vw;
+    margin-top: 0px;
+}
+.work-subtitle{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0px;
+}
+.work-titlepic{
+    width: 35vw;
+    height: 35vw;
+    border-radius: 10px; /* Adjust the value to control the roundness */
+    margin-right: 50px;
+}
+
+.work-intro{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+}
+
+.work-experience{
+    display: flex;
+    flex-direction: column;
+}
+.work-experience-title{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    margin-left: 50px;
+}
