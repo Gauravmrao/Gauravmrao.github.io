@@ -38,14 +38,30 @@ $my-website-theme: mat.define-theme((
 // @include mat.color-variants-backwards-compatibility($my-website-theme);
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: "Scope One", serif; font-weight: 400; font-style: normal; }
+html, body { height: 100%; font-size: 10px;}
+
+body { 
+  margin: 0; 
+  font-family: "Georama", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  }
 
 h1, h2, h3, h4 { 
   font-family: "DM Serif Display", serif; 
   font-weight: 400; 
   font-style: normal;
 }
+
+h1 { font-size: 6rem; }
+h2 { font-size: 5rem; }
+h3 { font-size: 4rem; }
+h4 { font-size: 3rem; }
+h5 { font-size: 2rem; }
+
 
 p { 
   font-family: "Georama", serif;
@@ -59,5 +75,22 @@ p {
 div{
   background-color: #fefbf4;
   color: #1c1c1c;
+}
 
+button{
+  background-color: #E8483D;
+  color: #fefbf4;
+  font-family: "DM Serif Display", serif; 
+  font-size: 14px;
+  font-weight: 400;
+  font-style: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 1px 20px;                   /* Adjusts the top/bottom and left/right padding */
+  border-radius: 10px;                /* Optional: Add rounded corners */
+  cursor: pointer;                   /* Make it look clickable */
+  height: 50px;
+}
+button:hover {
+  background-color: #ED776F;
 }

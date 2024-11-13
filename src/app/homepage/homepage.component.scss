@@ -49,7 +49,6 @@
 }
 .about-heading{
     font-style: bold;
-    color: #364e1a;
     font-size: 20px;
     margin-left: 100px;
     margin-top: 40px;
@@ -69,7 +68,6 @@
     font-size: 20px;
     margin-left: 40px;
     margin-right: 100px;
-    color: #1c1c1c
 }
 .about-buttons{
     margin-top: 15px;
@@ -77,20 +75,8 @@
     justify-content: flex-start;
 }
 .about-me-button, .about-resume-button {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 16px;
-    font-weight: 350;
-    font-style: normal;
-    background-color: #364e1a;
-    color: #fefbf4;
-    padding: 5px 10px;                   /* Adjusts the top/bottom and left/right padding */
     margin-right: 30px;
-    border-radius: 10px;                /* Optional: Add rounded corners */
-    cursor: pointer;                   /* Make it look clickable */
     height: 50px;
-}
-.about-me-button:hover, .about-resume-button:hover{
-    background-color: #62734e;         /* Change color on hover */
 }
 .about-linkedin-button{
     background-color: transparent;
@@ -103,22 +89,23 @@
 }
 
 .projects-box{
+    background-color: #E8483D;
     margin-top: 10px;
-    background-color:#2b2b2b;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;  /* Align items to the start (left) */
     width: 100%;                  /* Container takes full width */
 }
 .projects-heading{
-    font-style: bold;
     color: #fefbf4;
+    background-color: inherit;
+    font-style: bold;
     font-size: 20px;
-    text-decoration: underline;
     margin-left: 100px;
     margin-top: 40px;
 }
 .projects-cards{
+    background-color: inherit;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -128,9 +115,8 @@
 mat-card {
     max-width: 420px;
     margin: 20px;
-    background-color: #1c1c1c;
-    color: #fefbf4;
-    border: 4px solid #364e1a; /* Set the border width and color */
+    background-color: #fefbf4;
+    border: 4px solid #1c1c1c; /* Set the border width and color */
     border-radius: 8px; /* Optional: Set border radius */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
 }
@@ -139,7 +125,7 @@ mat-card:hover{
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow to create a popping effect */
 }
 .project-title{
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: "DM Serif Display", serif; 
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -149,31 +135,18 @@ mat-card:hover{
     font-size: 14px;
     margin-top: 5px;
     font-style: italic;
-    color: #fefbf4;
 }
 .project-button-containter{
     display: grid; /* Use grid layout */
     place-items: center; /* Center both horizontally and vertically */
 }
-.project-button{
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 14px;
-    font-weight: 350;
-    font-style: normal;
-    background-color: #364e1a;
-    color: #fefbf4;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 1px 20px;                   /* Adjusts the top/bottom and left/right padding */
-    border-radius: 10px;                /* Optional: Add rounded corners */
-    cursor: pointer;                   /* Make it look clickable */
-    height: 50px;
-}
-.project-button:hover{
-    background-color: #62734e;         /* Change color on hover */
-}
 .projects-link {
+    background-color: inherit;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 50px;
+}
+.project-button-2{
+    background-color: #fefbf4;
+    color: #1c1c1c;
 }
