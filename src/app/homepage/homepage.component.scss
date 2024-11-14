@@ -89,7 +89,7 @@
 }
 
 .projects-box{
-    background-color: #E8483D;
+    background-color: #E15C3B;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
@@ -133,8 +133,11 @@ mat-card:hover{
 }
 .project-technologies{
     font-size: 14px;
-    margin-top: 5px;
+    margin-top: 10px;
     font-style: italic;
+}
+.project-content{
+    font-size: 1.75rem;
 }
 .project-button-containter{
     display: grid; /* Use grid layout */
